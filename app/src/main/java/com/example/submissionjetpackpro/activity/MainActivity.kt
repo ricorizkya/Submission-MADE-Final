@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.submissionjetpackpro.R
 import com.example.submissionjetpackpro.databinding.ActivityMainBinding
-import com.example.submissionjetpackpro.fragment.favorite.FavoriteFragment
 import com.example.submissionjetpackpro.fragment.movies.MoviesFragment
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val moviesFragment = MoviesFragment()
 
         makeCurrentFragment(moviesFragment)
-        binding.bottomNavigation.setOnNavigationItemSelectedListener {
+        binding.bottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.movie_menu -> makeCurrentFragment(moviesFragment)
                 R.id.favorite_menu -> {
