@@ -39,7 +39,9 @@ android {
         jvmTarget = '1.8'
     }
     lintOptions {
-        abortOnError false
+        baseline file("lint-baseline.xml")
+        warningsAsErrors true
+        abortOnError true
     }
     dynamicFeatures = [':favorites']
 }
