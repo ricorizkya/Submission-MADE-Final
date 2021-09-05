@@ -28,7 +28,7 @@ class MoviesAdapter: RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
         }
         init {
             binding.root.setOnClickListener {
-                onItemClickCallback?.invoke(listMovies[adapterPosition])
+                onItemClickCallback?.invoke(listMovies[absoluteAdapterPosition])
             }
         }
     }
