@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val moviesFragment = MoviesFragment()
-        val favoriteFragment = FavoriteFragment()
 
         makeCurrentFragment(moviesFragment)
         binding.bottomNavigation.setOnNavigationItemSelectedListener {
