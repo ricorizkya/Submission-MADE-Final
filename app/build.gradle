@@ -41,7 +41,7 @@ android {
     lintOptions {
         abortOnError false
     }
-    dynamicFeatures = [':maps', ':favorites']
+    dynamicFeatures = [':favorites']
 }
 
 dependencies {
