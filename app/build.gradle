@@ -27,6 +27,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     buildFeatures {
         viewBinding = true
     }
@@ -47,7 +48,6 @@ android {
 
 dependencies {
     implementation project(":core")
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "androidx.core:core-ktx:$core_ktx_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
@@ -78,6 +78,4 @@ dependencies {
     implementation "org.koin:koin-core:$koin_version"
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-android-viewmodel:$koin_version"
-
-    implementation "org.jetbrains.kotlin:kotlin-reflect:1.4.32"
 }
